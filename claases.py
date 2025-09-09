@@ -138,3 +138,19 @@ class Locadora:
 
     def Lista_itens():
         pass
+    
+    #get e set
+    def getClientes(self):
+        return self.__clientes
+    
+    def getItens(self):
+        return self.__itens
+    
+    def setClientes(self,clientes:list):
+        self.__clientes = clientes
+        return self.__clientes
+    
+    def setItens(self,itens:list):
+        self.__itens = itens
+        return self.__itens
+    
