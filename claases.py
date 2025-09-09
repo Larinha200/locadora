@@ -1,8 +1,8 @@
 class Itens:
-    def __init__(self,Id,Titulo,Disponivel):
-        self.__Id= Id
-        self.__Titulo = Titulo
-        self.__Disponivel = Disponivel
+    def __init__(self,id,titulo,disponivel):
+        self.__id= id
+        self.__titulo = titulo
+        self.__disponivel = disponivel
 
     
     def Alugar():
@@ -12,22 +12,31 @@ class Itens:
         pass
 
 class Filmes(Itens):
-    def __init__(self,Id, Titulo,Genero,Duração):
-        self.__Id= Id
-        self.__Titulo = Titulo
-        self.__Genero = Genero
-        self.__Duração = Duração
+    def __init__(self,id, titulo,genero,duração):
+        self.__id= id
+        self.__titulo = titulo
+        self.__genero = genero
+        self.__duração = duração
     
 class Jogos(Itens):
-    def __init__(self,Id, Titulo,Plataforma,Faixa_etaria):
-        self.__Id= Id
-        self.__Titulo = Titulo
-        self.__Plataforma = Plataforma
-        self.__Faixa_etaria = Faixa_etaria
+    def __init__(self,id, titulo,plataforma,faixa_etaria):
+        self.__id= id
+        self.__titulo = titulo
+        self.__plataforma = plataforma
+        self.__faixa_etaria = faixa_etaria
 
 class Clientes:
-    def __init__(self,Nome, Cpf, Itens_locados):
-        self.__Nome = Nome
-        self.__Cpf = Cpf
-        self.__Itens_locados = Itens_locados
+    def __init__(self,nome, cpf, itens_locados):
+        self.__nome = nome
+        self.__cpf = cpf
+        self.__itens_locados = itens_locados
+
+    def Locar():
+        pass
+ 
+    def Devolver():
+        pass
+
+    def Listar_itens():
+        pass
 
