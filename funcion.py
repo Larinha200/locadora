@@ -7,12 +7,15 @@ def menu():
 def ls():
   os.system("pause")
 
-def cadastro_cliente():
+def cadastro_cliente(clientes):
+    
     print("bem vind* ao cadastro. \nInsira seu:")
-    nome=input(" Nome:")
+    nome=input("Nome:")
     cpf=input("CPF:")
-        
-    clientes=[]
-    clientes.append(nome)
-    clientes.append(cpf)
+
+    
+    client=Clientes(nome,cpf)
+    clientes.append(client)
+    
+    
     print(clientes)

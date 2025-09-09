@@ -127,8 +127,9 @@ class Locadora:
         self.__clientes = clientes
         self.__itens = itens
 
-    def Cadastrar_clientes():
-        pass
+    def Cadastrar_clientes(self,nome,cpf):
+         self.__clientes[len(self.__clientes) + 1] = Clientes(nome = nome , cpf = cpf)
+        
 
     def Cadastrar_item():
         pass
