@@ -85,10 +85,10 @@ class Jogos(Itens):
         self.__faixa_etaria = faixa_etaria
 
 class Clientes:
-    def __init__(self,nome:str, cpf:str, itens_locados:list):
+    def __init__(self,nome:str, cpf:str):
         self.__nome = nome
         self.__cpf = cpf
-        self.__itens_locados = itens_locados
+        #self.__itens_locados = itens_locados
 
     def Locar():
         pass
@@ -106,7 +106,7 @@ class Clientes:
     def getCpf(self):
         return self.__cpf
     
-    def getItens_locados(self):
+    #def getItens_locados(self):
         return self.__itens_locados
     
     def setNome(self, nome):
@@ -117,7 +117,7 @@ class Clientes:
         self.__cpf = cpf
         return self.__cpf
     
-    def setItens_locados(self,itens_locados):
+    #def setItens_locados(self,itens_locados):
         self.__itens_locados = itens_locados
         return self.__itens_locados
 
@@ -128,7 +128,7 @@ class Locadora:
         self.__itens = itens
 
     def Cadastrar_clientes(self,nome,cpf):
-         self.__clientes[len(self.__clientes) + 1] = Clientes(nome = nome , cpf = cpf)
+         self.__clientes.append(Clientes(nome=nome, cpf=cpf ))
         
 
     def Cadastrar_item():

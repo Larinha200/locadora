@@ -1,11 +1,12 @@
 from funcion import*
 clientes=[]
+itens_locados=[]
 menu()
 resp=int(input("Digite: --->"))
 while True:
     match resp:
         case 1:
-            cadastro_cliente()
+            cadastro_cliente(clientes)
             menu()
             resp=int(input("Digite: --->"))
         case 2:

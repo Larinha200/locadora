@@ -12,10 +12,7 @@ def cadastro_cliente(clientes):
     print("bem vind* ao cadastro. \nInsira seu:")
     nome=input("Nome:")
     cpf=input("CPF:")
-
-    
-    client=Clientes(nome,cpf)
+    client=Clientes(nome=nome,cpf=cpf)
     clientes.append(client)
-    
     
     print(clientes)
