@@ -62,7 +62,28 @@ class Jogos(Itens):
         self.__titulo = titulo
         self.__plataforma = plataforma
         self.__faixa_etaria = faixa_etaria
+    
+    
+    def getTitulo(self):
+        return self.__titulo
+    
+    def getPlataforma(self):
+        return self.__plataforma
+    
+    def getFaixa_etaria(self):
+        return self.__faixa_etaria
+    
+    def setTitulo(self, titulo):
+        self.__titulo = titulo
+        return self.__titulo
+    
+    def setPlataforma(self, plataforma:str):
+        self.__plataforma = plataforma
+        return self.__plataforma
 
+    def setFaixa_etaria(self, faixa_etaria:int):
+        self.__faixa_etaria = faixa_etaria
+        
 class Clientes:
     def __init__(self,nome:str, cpf:str, itens_locados:list):
         self.__nome = nome
