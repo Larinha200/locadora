@@ -1,7 +1,7 @@
 from funcion import*
 
 menu()
-resp=("Digite: \n --->")
+resp=("Digite: --->")
 
 match resp:
     case 1:
