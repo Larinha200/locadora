@@ -5,7 +5,10 @@ resp=("Digite: \n --->")
 
 match resp:
     case 1:
-        pass
+        print("bem vind* ao cadastro. \nInsira seu:")
+        nome=input(" Nome:")
+        cpf=input("CPF:")
+        
     case 2:
         pass
     case 3:
