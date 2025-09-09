@@ -27,11 +27,34 @@ class Itens:
         return self.__disponivel
 
 class Filmes(Itens):
-    def __init__(self, id:int, titulo:str, genero:str, duração:int):
+    def __init__(self, id:int, titulo:str, genero:str, duracao:int):
         self.__id= id
         self.__titulo = titulo
         self.__genero = genero
-        self.__duração = duração
+        self.__duracao = duracao
+
+    #metodos get e set
+    def getTitulo(self):
+        return self.__titulo
+    
+    def getGenero(self):
+        return self.__genero
+    
+    def getDuracao(self):
+        return self.__duracao
+    
+    def setTitulo(self, titulo):
+        self.__titulo = titulo
+        return self.__titulo
+    
+    def setGenero(self,genero):
+        self.__genero = genero
+        return self.__genero
+    
+    def setDuracao(self,duracao):
+        self.__duracao = duracao
+        return self.__duracao
+    
     
 class Jogos(Itens):
     def __init__(self, id:int, titulo:str, plataforma:str, faixa_etaria:int):
