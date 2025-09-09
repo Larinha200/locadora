@@ -12,8 +12,18 @@ class Itens:
         pass
 
 class Filmes(Itens):
-    def __init__(self,Genero,Duração):
+    def __init__(self,Id, Titulo,Genero,Duração):
+        self.__Id= Id
+        self.__Titulo = Titulo
         self.__Genero = Genero
         self.__Duração = Duração
+    
+class Jogos(Itens):
+    def __init__(self,Id, Titulo,Plataforma,Faixa_etaria):
+        self.__Id= Id
+        self.__Titulo = Titulo
+        self.__Plataforma = Plataforma
+        self.__Faixa_etaria = Faixa_etaria
+
     
 
