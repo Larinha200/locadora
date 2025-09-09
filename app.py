@@ -9,6 +9,7 @@ while True:
             cadastro_cliente(clientes)
             menu()
             resp=int(input("Digite: --->"))
+           
         case 2:
             pass
         case 3:
