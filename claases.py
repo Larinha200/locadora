@@ -4,12 +4,27 @@ class Itens:
         self.__titulo = titulo
         self.__disponivel = disponivel
 
-    
+    #metodos
     def Alugar():
         pass
 
     def Devolver():
         pass
+
+    #metodos get e set
+    def getTitulo(self):
+        return self.__titulo
+    
+    def getDisponivel(self):
+        return self.__disponivel
+    
+    def setTitulo (self,titulo:str):
+        self.__titulo = titulo
+        return self.__titulo
+    
+    def setDisponivel (self, disponivel:bool):
+        self.__disponivel = disponivel
+        return self.__disponivel
 
 class Filmes(Itens):
     def __init__(self, id:int, titulo:str, genero:str, duração:int):
