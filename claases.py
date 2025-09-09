@@ -25,5 +25,9 @@ class Jogos(Itens):
         self.__Plataforma = Plataforma
         self.__Faixa_etaria = Faixa_etaria
 
-    
+class Clientes:
+    def __init__(self,Nome, Cpf, Itens_locados):
+        self.__Nome = Nome
+        self.__Cpf = Cpf
+        self.__Itens_locados = Itens_locados
 
