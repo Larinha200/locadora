@@ -11,6 +11,9 @@ class Itens:
     def Devolver():
         pass
 
-
+class Filmes(Itens):
+    def __init__(self,Genero,Duração):
+        self.__Genero = Genero
+        self.__Duração = Duração
     
 
