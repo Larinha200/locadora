@@ -21,7 +21,7 @@ while True:
         case 3:
             pass
         case 4:
-            list_cli.Listar_clientes(lista_cli)
+            list_cli.Listar_clientes()
         case 5:
             pass
         case 6:
