@@ -2,7 +2,7 @@ import os
 from claases import *
 
 def menu():
-  print("1-Cadastro cliente \n2-Cadastro de jogo  \n3-Cadastro de filme \n4-Listar tudo \n5-Listar jogos \n6-Listar filmes \n7-Alugar filme \n8-Alugar jogo \n9-Devolver filme \n10-Devolver jogo \n11-Sair")
+  print("1-Cadastro cliente \n2-Cadastro de jogo  \n3-Cadastro de filme \n4-Listar tudo \n5-Listar jogos \n6-Listar filmes \n7-Listar clientes \n8-Alugar filme \n9-Alugar jogo \n10-Devolver filme \n11-Devolver jogo \n12-Sair")
 
 def ls():
   os.system("pause")

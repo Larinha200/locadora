@@ -10,7 +10,6 @@ while True:
     match resp:
         case 1:
             list_cli.Cadastrar_clientes(lista_cli, Clientes, cadastro_cliente)
-
             menu()
             resp=int(input("Digite: --->"))
            
@@ -21,15 +20,15 @@ while True:
         case 3:
             pass
         case 4:
-            list_cli.Listar_clientes()
-            menu()
-            resp=int(input("Digite: --->"))
+            pass
         case 5:
             pass
         case 6:
             pass
         case 7:
-            pass
+            list_cli.Listar_clientes()
+            menu()
+            resp=int(input("Digite: --->"))
         case 8:
             pass
         case 9:
