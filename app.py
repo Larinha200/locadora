@@ -9,7 +9,7 @@ resp=int(input("Digite: --->"))
 while True:
     match resp:
         case 1:
-            Locadora.Cadastrar_clientes()
+            Locadora.Cadastrar_clientes(lista_cli,Clientes)
             menu()
             resp=int(input("Digite: --->"))
            
