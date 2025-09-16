@@ -129,7 +129,8 @@ class Locadora:
         self.__itens = []
 
     def Cadastrar_clientes(self,lista_cli, Clientes, cadastro_cliente):
-        self.__clientes.append(cadastro_cliente(Clientes,lista_cli))
+        cliente = cadastro_cliente(Clientes, lista_cli)
+        self.__clientes.append(cliente)
         return self.__clientes
         
 
@@ -138,8 +139,8 @@ class Locadora:
         pass
 
     def Listar_clientes(self):
-        
-         return self.__clientes
+        for cliente in self.__clientes:
+            print(f"Nome: {cliente.getNome()}, CPF: {cliente.getCpf()}")
 
     def Lista_itens():
         pass

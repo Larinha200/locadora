@@ -21,9 +21,7 @@ while True:
         case 3:
             pass
         case 4:
-            clientes = list_cli.Listar_clientes()
-            for cliente in clientes:
-                print(f"Nome: {cliente.getNome()}, CPF: {cliente.getCpf()}")
+            list_cli.Listar_clientes()
         case 5:
             pass
         case 6:
