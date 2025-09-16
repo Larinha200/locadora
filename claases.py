@@ -138,12 +138,9 @@ class Locadora:
         pass
 
     def Listar_clientes(self):
-        if not self.__clientes:
-            print("Nenhum cliente cadastrado.")
-        else:
-            for cliente in self.__clientes:
-                print(f"Nome: {cliente.getNome()}, CPF: {cliente.getCpf()}")
         
+         return self.__clientes
+
     def Lista_itens():
         pass
     
