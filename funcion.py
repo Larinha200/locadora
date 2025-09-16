@@ -2,7 +2,13 @@ import os
 from claases import *
 
 def menu():
-  print("1-Cadastro cliente \n2-Cadastro de jogo  \n3-Cadastro de filme \n4-Listar tudo \n5-Listar jogos \n6-Listar filmes \n7-Listar clientes \n8-Alugar filme \n9-Alugar jogo \n10-Devolver filme \n11-Devolver jogo \n12-Sair")
+  print("1-Cadastro cliente \n2-  \n2-Cadastro de itens \n3-Listar tudo \n4-Listar jogos \n5-Listar filmes \n6-Listar clientes \n7-Alugar filme \n8-Alugar jogo \n9-Devolver filme \n10-Devolver jogo \n11-Sair")
+
+def menu1():
+  print("DIgite: \n1-Cadastro de jogo \n2-Cadastro de filme")
+
+def menu2():
+   print("Digite: \n1-Listar jogos \n2-Listar filmes")
 
 def ls():
   os.system("pause")
@@ -24,9 +30,9 @@ def cadastro_jogo(lista_jogo):
    faixa_etaria=input("Faixa etaria:")
    jogo= Jogos(id,titulo,plataforma,faixa_etaria)
    lista_jogo.append(jogo)
+   return jogo
 
-   for joggo in lista_jogo:
-      print(f"{id} \n  Titulo:{joggo.getTitulo()} \n  Plataforma:{joggo.getPlataforma()} \n  Faixa etaria:{joggo.getFaixa_etaria}")
+   
 
 def cadastro_filme(lista_filme):
     print("Bem vind* ao cadastro de filmes. \nInsira:")
@@ -36,7 +42,5 @@ def cadastro_filme(lista_filme):
     duracao=input("Duração:")
     filme= Filmes(id,titulo,genero,duracao)
     lista_filme.append(filme)
-
-    for fil in lista_filme:
-        print(f"{id} \n  Titulo:{fil.getTitulo()} \n  Genero:{fil.getGenero()} \n  Duração:{fil.getDuracao}")
-        
+    return filme
+    

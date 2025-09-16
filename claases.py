@@ -127,6 +127,8 @@ class Locadora:
     def __init__(self):
         self.__clientes = []
         self.__itens = []
+        self.__filme =[]
+        self.__jogo =[]
 
     def Cadastrar_clientes(self,lista_cli, Clientes, cadastro_cliente):
         cliente = cadastro_cliente(Clientes, lista_cli)
@@ -135,17 +137,37 @@ class Locadora:
         
 
     
-    def Cadastrar_item():
-        pass
+    def Cadastrar_jogo(self,lista_jogo):
+      
+
+            jogo= cadastro_jogo(lista_jogo)
+            self.__jogo.append(jogo)
+            return self.__jogo
+    
+    def Cadastrar__filme(self,lista_filme):
+       
+            filme =cadastro_filme(lista_filme)
+            self.__filme.append(filme)
+            return  self.__filme
 
     def Listar_clientes(self):
         for cliente in self.__clientes:
             print(f"Nome: {cliente.getNome()}, CPF: {cliente.getCpf()}")
-            
 
-    def Lista_itens():
+    def Listar_filme(self):
+        for fil in self.__filme:
+            print(f"{id} \n  Titulo:{fil.getTitulo()} \n  Genero:{fil.getGenero()} \n  Duração:{fil.getDuracao()}")
+         
+
+    def Listar_jogo(self):
+        for joggo in self.__jogo:
+            print(f"{id} \n  Titulo:{joggo.getTitulo()} \n  Plataforma:{joggo.getPlataforma()} \n  Faixa etaria:{joggo.getFaixa_etaria()}")  
+
+    def Lista_itens(self):
         pass
     
+
+
     #get e set
     def getClientes(self):
         return self.__clientes
