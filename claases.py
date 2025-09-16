@@ -129,7 +129,7 @@ class Locadora:
         self.__itens = itens
 
     def Cadastrar_clientes(self,lista_cli):
-        self.__clientes[len(self.clientes)+1] = cadastro_cliente(lista_cli)
+        self.__clientes[len(self.clientes)+1] = cadastro_cliente(Clientes,lista_cli)
         return self.__clientes
         
 
@@ -137,7 +137,7 @@ class Locadora:
     def Cadastrar_item():
         pass
 
-    def Listar_clientes(self,lista_cli):
+    def Listar_clientes(self):
          return self.__clientes
 
     def Lista_itens():
