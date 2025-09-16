@@ -7,7 +7,15 @@ def menu():
 def ls():
   os.system("pause")
 
-
+def cadastro_cliente(Clientes,lista_cli):
+    
+    print("bem vind* ao cadastro. \nInsira seu:")
+    nome=input("Nome:")
+    cpf=input("CPF:")
+    client=Clientes(nome,cpf)
+    lista_cli.append(client)
+    return client 
+    
 def cadastro_jogo(lista_jogo):
    print("Bem vind* ao cadastro de jogos. \nInsira:")
    id = (len(lista_jogo)+1)
@@ -21,3 +29,4 @@ def cadastro_jogo(lista_jogo):
       print(f"{id} \n  Titulo:{joggo.getTitulo()} \n  Plataforma:{joggo.getPlataforma()} \n  Faixa etaria:{faixa_etaria}")
 
 
+      
