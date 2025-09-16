@@ -95,10 +95,10 @@ class Clientes:
         self.__cpf = cpf
         self.__itens_locados = []
 
-    def locar(self, item: Itens):
-        if item.getDisponivel():
-            item.alugar()
-            self.__itens_Locados.append(item)
+    def locar(self, Itens):
+        if Itens.getDisponivel():
+            Itens.alugar()
+            self.__itens_Locados.append(Itens)
             return True
         else:
             return False
