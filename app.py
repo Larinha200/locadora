@@ -22,6 +22,8 @@ while True:
             pass
         case 4:
             list_cli.Listar_clientes()
+            menu()
+            resp=int(input("Digite: --->"))
         case 5:
             pass
         case 6:
@@ -38,3 +40,5 @@ while True:
             pass
         case _:
             pass
+
+        

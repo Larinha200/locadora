@@ -128,10 +128,15 @@ class Locadora:
         self.__clientes = []
         self.__itens = []
 
-    def Cadastrar_clientes(self,lista_cli, Clientes, cadastro_cliente):
-        cliente = cadastro_cliente(Clientes, lista_cli)
-        self.__clientes.append(cliente)
-        return self.__clientes
+    def Cadastrar_clientes(self,lista_cli, Clientes):
+        
+        print("bem vind* ao cadastro. \nInsira seu:")
+        nome=input("Nome:")
+        cpf=input("CPF:")
+        client=Clientes(nome,cpf)
+        lista_cli.append(client)
+        return client 
+    
         
 
     
@@ -141,6 +146,7 @@ class Locadora:
     def Listar_clientes(self):
         for cliente in self.__clientes:
             print(f"Nome: {cliente.getNome()}, CPF: {cliente.getCpf()}")
+            
 
     def Lista_itens():
         pass
