@@ -22,7 +22,7 @@ def cadastro_cliente(Clientes,lista_cli):
     lista_cli.append(client)
     return client 
     
-def cadastro_jogo(lista_jogo):
+def cadastro_jogo(lista_jogo, Jogos):
    print("Bem vind* ao cadastro de jogos. \nInsira:")
    id = (len(lista_jogo)+1)
    titulo= input("Titulo:")
@@ -34,7 +34,7 @@ def cadastro_jogo(lista_jogo):
 
    
 
-def cadastro_filme(lista_filme):
+def cadastro_filme(lista_filme,Filmes):
     print("Bem vind* ao cadastro de filmes. \nInsira:")
     id = (len(lista_filme)+1)
     titulo= input("Titulo:")

@@ -1,13 +1,17 @@
 from funcion import*
 class Itens:
-    def __init__(self, id:int, titulo:str, disponivel:bool):
+    def __init__(self, id:int, titulo:str, disponivel:False):
         self.__id= id
         self.__titulo = titulo
         self.__disponivel = disponivel
 
     #metodos
-    def Alugar():
-        pass
+    def Alugar(self):
+        if self.__disponivel:
+            self.__disponivel = False
+            return f'O item {self.__titulo} alugado com sucesso!'
+        else:
+            return f'O item {self.__titulo} não esta disponivel para alugar.'
 
     def Devolver():
         pass
@@ -23,7 +27,7 @@ class Itens:
         self.__titulo = titulo
         return self.__titulo
     
-    def setDisponivel (self, disponivel:bool):
+    def setDisponivel (self, disponivel:False):
         self.__disponivel = disponivel
         return self.__disponivel
 
@@ -89,11 +93,15 @@ class Clientes:
     def __init__(self,nome:str, cpf:str):
         self.__nome = nome
         self.__cpf = cpf
-        #self.__itens_locados = itens_locados
+        self.__itens_locados = []
 
-    def Locar():
-        pass
- 
+    def locar(self, Itens):
+        if Itens.getDisponivel():
+            Itens.Alugar()
+            self.__itens_locados.append(Itens)
+            return f'Item "{Itens.getTitulo()}" alugado com sucesso para {self.__nome}.'
+        else:
+            return f'Item "{Itens.getTitulo()}" não está disponível para aluguel.'
     def Devolver():
         pass
 
@@ -107,7 +115,7 @@ class Clientes:
     def getCpf(self):
         return self.__cpf
     
-    #def getItens_locados(self):
+    def getItens_locados(self):
         return self.__itens_locados
     
     def setNome(self, nome):
@@ -118,7 +126,7 @@ class Clientes:
         self.__cpf = cpf
         return self.__cpf
     
-    #def setItens_locados(self,itens_locados):
+    def setItens_locados(self,itens_locados):
         self.__itens_locados = itens_locados
         return self.__itens_locados
 
@@ -139,13 +147,13 @@ class Locadora:
     
     def Cadastrar_jogo(self,lista_jogo):
       
-        jogo= cadastro_jogo(lista_jogo)
+        jogo= cadastro_jogo(lista_jogo,Jogos)
         self.__jogo.append(jogo)
         return self.__jogo
     
     def Cadastrar__filme(self,lista_filme):
        
-        filme =cadastro_filme(lista_filme)
+        filme= cadastro_filme(lista_filme,Filmes)
         self.__filme.append(filme)
         return  self.__filme
 

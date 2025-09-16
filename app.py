@@ -5,6 +5,7 @@ lista_jogo=[]
 list_filme=[]
 itens_locados=[]
 list_cli = Locadora()
+list_clii = Clientes(nome=str, cpf=str)
 menu()
 resp=int(input("Digite: --->"))
 while True:
@@ -23,21 +24,27 @@ while True:
                 case 2:
                     list_cli.Cadastrar__filme(lista_filme)
                 case _:
-                    
+                    ("Opção invalida. digite outra")
         case 3:
-            pass
+            list_cli.Lista_itens()
+            menu()
+            resp=int(input("Digite: --->"))
         case 4:
-            pass
+           list_cli.Listar_jogo()
+           menu()
+           resp=int(input("Digite: --->"))
         case 5:
-            pass
+            list_cli.Listar_filme()
+            menu()
+            resp=int(input("Digite: --->"))
         case 6:
-            pass
-        case 7:
             list_cli.Listar_clientes()
             menu()
             resp=int(input("Digite: --->"))
+        case 7:
+            list_clii.locar( Itens)
         case 8:
-            pass
+            list_clii.locar(Itens)
         case 9:
             pass
         case 10:
