@@ -124,11 +124,11 @@ class Clientes:
 
 
 class Locadora:
-    def __init__(self, clientes:list, itens:list):
-        self.__clientes = clientes
-        self.__itens = itens
+    def __init__(self, ):
+        self.__clientes = []
+        self.__itens = []
 
-    def Cadastrar_clientes(self,lista_cli):
+    def Cadastrar_clientes(self,lista_cli, Clientes, cadastro_cliente):
         self.__clientes[len(self.__clientes)+1] = cadastro_cliente(Clientes,lista_cli)
         return self.__clientes
         
