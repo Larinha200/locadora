@@ -6,7 +6,7 @@ class Itens:
         self.__disponivel = disponivel
 
     #metodos
-    def Alugar(self):
+    def alugar (self):
         if self.__disponivel:
             self.__disponivel = False
             return f'O item {self.__titulo} alugado com sucesso!'
@@ -95,13 +95,13 @@ class Clientes:
         self.__cpf = cpf
         self.__itens_locados = []
 
-    def locar(self, Itens):
-        if Itens.getDisponivel():
-            Itens.Alugar()
-            self.__itens_locados.append(Itens)
-            return f'Item "{Itens.getTitulo()}" alugado com sucesso para {self.__nome}.'
+    def locar(self, item: Itens):
+        if item.is_disponivel():
+            item.alugar()
+            self.__itens_Locados.append(item)
+            return True
         else:
-            return f'Item "{Itens.getTitulo()}" não está disponível para aluguel.'
+            return False
     def Devolver():
         pass
 
