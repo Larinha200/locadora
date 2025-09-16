@@ -2,6 +2,7 @@ from funcion import*
 from claases import*
 lista_cli=[]
 lista_jogo=[]
+list_filme=[]
 itens_locados=[]
 list_cli = Locadora()
 menu()

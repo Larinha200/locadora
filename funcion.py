@@ -26,7 +26,17 @@ def cadastro_jogo(lista_jogo):
    lista_jogo.append(jogo)
 
    for joggo in lista_jogo:
-      print(f"{id} \n  Titulo:{joggo.getTitulo()} \n  Plataforma:{joggo.getPlataforma()} \n  Faixa etaria:{faixa_etaria}")
+      print(f"{id} \n  Titulo:{joggo.getTitulo()} \n  Plataforma:{joggo.getPlataforma()} \n  Faixa etaria:{joggo.getFaixa_etaria}")
 
+def cadastro_filme(lista_filme):
+    print("Bem vind* ao cadastro de filmes. \nInsira:")
+    id = (len(lista_filme)+1)
+    titulo= input("Titulo:")
+    genero=input("Genero:")
+    duracao=input("Duração:")
+    filme= Filmes(id,titulo,genero,duracao)
+    lista_filme.append(filme)
 
-      
+    for fil in lista_filme:
+        print(f"{id} \n  Titulo:{fil.getTitulo()} \n  Genero:{fil.getGenero()} \n  Duração:{fil.getDuracao}")
+        
