@@ -1,3 +1,4 @@
+from funcion import*
 class Itens:
     def __init__(self, id:int, titulo:str, disponivel:bool):
         self.__id= id
@@ -127,8 +128,11 @@ class Locadora:
         self.__clientes = clientes
         self.__itens = itens
 
-    def Cadastrar_clientes(self,nome,cpf):
-         self.__clientes.append(Clientes(nome=nome, cpf=cpf ))
+    def Cadastrar_clientes(self,lista_cli):
+        cadastro_cliente(lista_cli)
+        for pessoa in lista_cli:
+            print(f"Nome:{pessoa.getNome()}\n Cpf:{pessoa.getCpf()}")
+
         
 
     def Cadastrar_item():
