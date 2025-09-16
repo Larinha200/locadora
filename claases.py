@@ -141,7 +141,7 @@ class Locadora:
     def Listar_clientes(self):
         for cliente in self.__clientes:
             print(f"Nome: {cliente.getNome()}, CPF: {cliente.getCpf()}")
-            break
+            
 
     def Lista_itens():
         pass

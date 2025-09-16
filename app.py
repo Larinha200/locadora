@@ -9,7 +9,7 @@ resp=int(input("Digite: --->"))
 while True:
     match resp:
         case 1:
-            list_cli.Cadastrar_clientes(lista_cli, Clientes)
+            list_cli.Cadastrar_clientes(lista_cli, Clientes, cadastro_cliente)
 
             menu()
             resp=int(input("Digite: --->"))
@@ -41,3 +41,4 @@ while True:
         case _:
             pass
 
+        
