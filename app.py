@@ -1,13 +1,15 @@
 from funcion import*
+from claases import*
 lista_cli=[]
 lista_jogo=[]
 itens_locados=[]
+list_cli = Locadora(clientes=[], itens = [])
 menu()
 resp=int(input("Digite: --->"))
 while True:
     match resp:
         case 1:
-            cadastro_cliente(lista_cli)
+            list_cli.Cadastrar_clientes(lista_cli)
             menu()
             resp=int(input("Digite: --->"))
            
@@ -18,7 +20,7 @@ while True:
         case 3:
             pass
         case 4:
-            pass
+            list_cli.Listar_clientes(lista_cli)
         case 5:
             pass
         case 6:

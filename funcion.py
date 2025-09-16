@@ -14,7 +14,8 @@ def cadastro_cliente(lista_cli):
     cpf=input("CPF:")
     client=Clientes(nome,cpf)
     lista_cli.append(client)
-
+    for pessoa in lista_cli:
+       print(f"Nome:{pessoa.getNome()}\n Cpf:{pessoa.getCpf()}")
     
 def cadastro_jogo(lista_jogo):
    print("Bem vind* ao cadastro de jogos. \nInsira:")

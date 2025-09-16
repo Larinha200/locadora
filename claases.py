@@ -129,17 +129,16 @@ class Locadora:
         self.__itens = itens
 
     def Cadastrar_clientes(self,lista_cli):
-        cadastro_cliente(lista_cli)
-        for pessoa in lista_cli:
-            print(f"Nome:{pessoa.getNome()}\n Cpf:{pessoa.getCpf()}")
-
+        return cadastro_cliente(lista_cli)
         
 
+    
     def Cadastrar_item():
         pass
 
-    def Listar_clientes():
-        pass
+    def Listar_clientes(self,lista_cli):
+        self.__clientes[len(self.clientes)+1] = cadastro_cliente(lista_cli)
+        return self.__clientes
 
     def Lista_itens():
         pass
