@@ -1,17 +1,20 @@
 from funcion import*
-clientes=[]
+lista_cli=[]
+lista_jogo=[]
 itens_locados=[]
 menu()
 resp=int(input("Digite: --->"))
 while True:
     match resp:
         case 1:
-            cadastro_cliente(clientes)
+            cadastro_cliente(lista_cli)
             menu()
             resp=int(input("Digite: --->"))
            
         case 2:
-            pass
+            cadastro_jogo(lista_jogo)
+            menu()
+            resp=int(input("Digite: --->"))
         case 3:
             pass
         case 4:

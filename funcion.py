@@ -1,5 +1,5 @@
 import os
-from claases import *
+from classes import *
 
 def menu():
   print("1-Cadastro cliente \n2-Cadastro de jogo  \n3-Cadastro de filme \n4-Listar tudo \n5-Listar jogos \n6-Listar filmes \n7-Alugar filme \n8-Alugar jogo \n9-Devolver filme \n10-Devolver jogo \n11-Sair")
@@ -7,12 +7,25 @@ def menu():
 def ls():
   os.system("pause")
 
-def cadastro_cliente(clientes):
+def cadastro_cliente(lista_cli):
     
     print("bem vind* ao cadastro. \nInsira seu:")
     nome=input("Nome:")
     cpf=input("CPF:")
-    client=Clientes(nome=nome,cpf=cpf)
-    clientes.append(client)
-    
-    print(clientes)
+    client=Clientes(nome,cpf)
+    lista_cli.append(client)
+
+    for pessoa in lista_cli:
+        print(f"Nome:{pessoa.getNome()}\n Cpf:{pessoa.getCpf()}")
+
+def cadastro_jogo(lista_jogo):
+   print("Bem vind* ao cadastro de jogos. \nInsira:")
+   id = (len(lista_jogo)+1)
+   titulo= input("Titulo:")
+   plataforma=input("Plataforma:")
+   faixa_etaria=input("Faixa etaria:")
+   jogo= Jogos(id,titulo,plataforma,faixa_etaria)
+   lista_jogo.append(jogo)
+
+   for joggo in lista_jogo:
+      print(f"{id} \n  Titulo:{joggo.getTitulo()} \n  Plataforma:{joggo.getPlataforma()} \n  Faixa etaria:{faixa_etaria}")
