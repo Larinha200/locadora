@@ -29,28 +29,37 @@ while True:
             list_cli.Lista_itens()
             menu()
             resp=int(input("Digite: --->"))
+
         case 4:
            list_cli.Listar_jogo()
            menu()
            resp=int(input("Digite: --->"))
+
         case 5:
             list_cli.Listar_filme()
             menu()
             resp=int(input("Digite: --->"))
+
         case 6:
             list_cli.Listar_clientes()
             menu()
             resp=int(input("Digite: --->"))
+            
         case 7:
             list_clii.locar( Itens)
+
         case 8:
             list_clii.locar(Itens)
+
         case 9:
             pass
+
         case 10:
             pass
+
         case 11:
             pass
+        
         case _:
             pass
 

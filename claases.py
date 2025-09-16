@@ -1,17 +1,19 @@
 from funcion import*
 class Itens:
-    def __init__(self, id:int, titulo:str, disponivel:False):
+    def __init__(self, id:int, titulo:str, disponivel:bool):
         self.__id= id
         self.__titulo = titulo
-        self.__disponivel = disponivel
+        self.__disponivel = True
 
     #metodos
-    def alugar (self):
-        if self.__disponivel:
-            self.__disponivel = False
+    def Locar(self):
+        if self.__disponivel == True:
+            self.__disponivel == False
             return f'O item {self.__titulo} alugado com sucesso!'
-        else:
-            return f'O item {self.__titulo} não esta disponivel para alugar.'
+        
+        if self.__disponivel == False:
+                self.__disponivel == True
+                return f'O item {self.__titulo} não esta disponivel para alugar.'
 
     def Devolver():
         pass
@@ -95,8 +97,21 @@ class Clientes:
         self.__cpf = cpf
         self.__itens_locados = []
 
+    def alugar(self):
+        if :
+            alugar (self)
+            self.__disponivel = False
+            return True
+        return False
+
+    def devolver(self):
+        if not self.__disponivel:
+            self.__disponivel = True
+            return True
+        return False
+
     def locar(self, Itens):
-        if Itens.getDisponivel():
+        if Itens.self.__disponivel():
             Itens.alugar()
             self.__itens_Locados.append(Itens)
             return True
@@ -153,7 +168,7 @@ class Locadora:
     
     def Cadastrar__filme(self,lista_filme):
        
-        filme= cadastro_filme(lista_filme,Filmes)
+        filme = cadastro_filme(lista_filme,Filmes)
         self.__filme.append(filme)
         return  self.__filme
 
