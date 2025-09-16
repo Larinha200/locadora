@@ -96,7 +96,7 @@ class Clientes:
         self.__itens_locados = []
 
     def locar(self, item: Itens):
-        if item.is_disponivel():
+        if item.getDisponivel():
             item.alugar()
             self.__itens_Locados.append(item)
             return True
