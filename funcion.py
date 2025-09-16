@@ -2,7 +2,7 @@ import os
 from claases import *
 
 def menu():
-  print("1-Cadastro cliente \n2-  \n2-Cadastro de itens \n3-Listar tudo \n4-Listar jogos \n5-Listar filmes \n6-Listar clientes \n7-Alugar filme \n8-Alugar jogo \n9-Devolver filme \n10-Devolver jogo \n11-Sair")
+  print("1-Cadastro cliente  \n2-Cadastro de itens \n3-Listar tudo \n4-Listar jogos \n5-Listar filmes \n6-Listar clientes \n7-Alugar filme \n8-Alugar jogo \n9-Devolver filme \n10-Devolver jogo \n11-Sair")
 
 def menu1():
   print("DIgite: \n1-Cadastro de jogo \n2-Cadastro de filme")

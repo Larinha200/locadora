@@ -15,9 +15,15 @@ while True:
             resp=int(input("Digite: --->"))
            
         case 2:
-            cadastro_jogo(lista_jogo)
-            menu()
-            resp=int(input("Digite: --->"))
+            menu1()
+            resp3=int(input("Digite: --->"))
+            match resp3:
+                case 1:
+                    list_cli.Cadastrar_jogo(lista_jogo)
+                case 2:
+                    list_cli.Cadastrar__filme(lista_filme)
+                case _:
+                    
         case 3:
             pass
         case 4:
