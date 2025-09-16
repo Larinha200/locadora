@@ -128,10 +128,11 @@ class Locadora:
         self.__clientes = []
         self.__itens = []
 
-    def Cadastrar_clientes(self, Clientes, cadastro_cliente):
-        cliente = cadastro_cliente(Clientes)  # Sem passar lista_cli, já que você vai adicionar na lista interna
+    def Cadastrar_clientes(self,lista_cli, Clientes, cadastro_cliente):
+        cliente = cadastro_cliente(Clientes, lista_cli)
         self.__clientes.append(cliente)
         return self.__clientes
+        
 
     
     def Cadastrar_item():
