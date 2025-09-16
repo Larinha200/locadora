@@ -124,7 +124,7 @@ class Clientes:
 
 
 class Locadora:
-    def __init__(self, ):
+    def __init__(self):
         self.__clientes = []
         self.__itens = []
 

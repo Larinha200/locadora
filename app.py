@@ -3,7 +3,7 @@ from claases import*
 lista_cli=[]
 lista_jogo=[]
 itens_locados=[]
-list_cli = Locadora(clientes=[], itens = [])
+list_cli = Locadora()
 menu()
 resp=int(input("Digite: --->"))
 while True:
