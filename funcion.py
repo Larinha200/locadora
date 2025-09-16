@@ -7,7 +7,7 @@ def menu():
 def ls():
   os.system("pause")
 
-def cadastro_cliente(lista_cli):
+def cadastro_cliente(Clientes,lista_cli):
     
     print("bem vind* ao cadastro. \nInsira seu:")
     nome=input("Nome:")
