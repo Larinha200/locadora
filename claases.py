@@ -129,7 +129,7 @@ class Locadora:
         self.__itens = []
 
     def Cadastrar_clientes(self,lista_cli, Clientes, cadastro_cliente):
-        self.__clientes[len(self.__clientes)+1].append(cadastro_cliente(Clientes,lista_cli))
+        self.__clientes.append(cadastro_cliente(Clientes,lista_cli))
         return self.__clientes
         
 
