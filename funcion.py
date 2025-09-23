@@ -42,5 +42,6 @@ def cadastro_filme(lista_filme,Filmes):
     duracao=input("Duração:")
     filme= Filmes(id,titulo,genero,duracao)
     lista_filme.append(filme)
+    Locadora.cadastrar_item()
     return filme
     

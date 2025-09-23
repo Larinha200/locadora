@@ -7,12 +7,10 @@ class Itens:
 
     #metodos
     def Locar(self):
-        if self.__disponivel == True:
-            self.__disponivel == False
-            return f'O item {self.__titulo} alugado com sucesso!'
+        if self.__disponivel == True: 
+            return f'O item {self.__titulo} pode ser alugado!'
         
         if self.__disponivel == False:
-                self.__disponivel == True
                 return f'O item {self.__titulo} não esta disponivel para alugar.'
 
     def Devolver():
@@ -29,14 +27,13 @@ class Itens:
         self.__titulo = titulo
         return self.__titulo
     
-    def setDisponivel (self, disponivel:False):
+    def setDisponivel (self, disponivel):
         self.__disponivel = disponivel
         return self.__disponivel
 
 class Filmes(Itens):
-    def __init__(self, id:int, titulo:str, genero:str, duracao:int):
-        self.__id= id
-        self.__titulo = titulo
+    def __init__(self, titulo:str, genero:str, duracao:int):
+        super().__init__(titulo = titulo)
         self.__genero = genero
         self.__duracao = duracao
 
@@ -64,9 +61,8 @@ class Filmes(Itens):
     
     
 class Jogos(Itens):
-    def __init__(self, id:int, titulo:str, plataforma:str, faixa_etaria:int):
-        self.__id= id
-        self.__titulo = titulo
+    def __init__(self, titulo:str, plataforma:str, faixa_etaria:int):
+        super().__init__( titulo = titulo)
         self.__plataforma = plataforma
         self.__faixa_etaria = faixa_etaria
     
@@ -98,11 +94,13 @@ class Clientes:
         self.__itens_locados = []
 
     def alugar(self):
-        if :
-            alugar (self)
+        try:
+            self.__disponivel = True
+            print("item disponivel")
+        except:
             self.__disponivel = False
-            return True
-        return False
+            print("item n disponivel")
+           
 
     def devolver(self):
         if not self.__disponivel:
@@ -171,6 +169,11 @@ class Locadora:
         filme = cadastro_filme(lista_filme,Filmes)
         self.__filme.append(filme)
         return  self.__filme
+    
+    def cadastrar_item(self):
+        self.__itens.append(self.__filme)
+        self.__itens.append(self.__jogo)
+        return self.__itens
 
     def Listar_clientes(self):
         for cliente in self.__clientes:
