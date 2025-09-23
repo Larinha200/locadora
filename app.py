@@ -2,7 +2,7 @@ from funcion import*
 from claases import*
 lista_cli=[]
 lista_jogo=[]
-list_filme=[]
+lista_filme=[]
 itens_locados=[]
 list_cli = Locadora()
 list_clii = Clientes(nome=str, cpf=str)

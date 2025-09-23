@@ -159,15 +159,15 @@ class Locadora:
         
 
     
-    def Cadastrar_jogo(self,lista_jogo):
+    def Cadastrar_jogo(self,lista_jogo, Jogos):
       
-        jogo= cadastro_jogo(lista_jogo,Jogos)
+        jogo= cadastro_jogo(lista_jogo,Jogos,Locadora)
         self.__jogo.append(jogo)
         return self.__jogo
     
-    def Cadastrar__filme(self,lista_filme):
+    def Cadastrar__filme(self,lista_filme, Filmes):
        
-        filme = cadastro_filme(lista_filme,Filmes)
+        filme = cadastro_filme(lista_filme,Filmes,Locadora)
         self.__filme.append(filme)
         return  self.__filme
     
