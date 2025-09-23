@@ -1,7 +1,7 @@
 from funcion import*
 class Itens:
-    def __init__(self, id:int, titulo:str, disponivel:bool):
-        self.__id= id
+    def __init__(self, titulo:str):
+        self.__id= len(self.__itens)
         self.__titulo = titulo
         self.__disponivel = True
 
@@ -94,6 +94,7 @@ class Clientes:
         self.__itens_locados = []
 
     def alugar(self):
+        Locar()
         try:
             self.__disponivel = True
             print("item disponivel")

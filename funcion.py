@@ -30,7 +30,8 @@ def cadastro_jogo(lista_jogo, Jogos):
    faixa_etaria=input("Faixa etaria:")
    jogo= Jogos(id,titulo,plataforma,faixa_etaria)
    lista_jogo.append(jogo)
-   return jogo
+   Locadora.cadastrar_item()
+   return Locadora.getItens()
 
    
 
@@ -43,5 +44,5 @@ def cadastro_filme(lista_filme,Filmes):
     filme= Filmes(id,titulo,genero,duracao)
     lista_filme.append(filme)
     Locadora.cadastrar_item()
-    return filme
+    return Locadora.getItens()
     
