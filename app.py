@@ -20,9 +20,9 @@ while True:
             resp3=int(input("Digite: --->"))
             match resp3:
                 case 1:
-                    list_cli.Cadastrar_jogo(lista_jogo)
+                    list_cli.Cadastrar_jogo(lista_jogo,Jogos)
                 case 2:
-                    list_cli.Cadastrar__filme(lista_filme)
+                    list_cli.Cadastrar__filme(lista_filme,Filmes)
                 case _:
                     ("Opção invalida. digite outra")
         case 3:

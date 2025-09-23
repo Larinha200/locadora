@@ -161,7 +161,9 @@ class Locadora:
     
     def Cadastrar_jogo(self,lista_jogo, Jogos):
       
-        jogo= cadastro_jogo(lista_jogo,Jogos,Locadora)
+        jogo= cadastro_jogo(lista_jogo,Jogos)
+        lista_jogo.append(jogo)
+        Locadora.cadastrar_item()
         self.__jogo.append(jogo)
         return self.__jogo
     

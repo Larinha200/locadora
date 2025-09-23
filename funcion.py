@@ -29,9 +29,7 @@ def cadastro_jogo(lista_jogo, Jogos, Locadora):
    plataforma=input("Plataforma:")
    faixa_etaria=input("Faixa etaria:")
    jogo= Jogos(titulo,plataforma,faixa_etaria)
-   lista_jogo.append(jogo)
-   Locadora.cadastrar_item()
-   return Locadora.getItens()
+   
 
    
 
